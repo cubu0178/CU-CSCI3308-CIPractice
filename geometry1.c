@@ -1,8 +1,8 @@
 /*
  * geometry.c
- * Kevin Eastman
+ * Andy Sayler
  * CSCI 3308
- * Spring 2018
+ * Summer 2014
  *
  * This file contains a simple geomtery functions.
  *
@@ -70,13 +70,6 @@ void coord_2d_midpoint(coord_2d_t* mid, const coord_2d_t* a, const coord_2d_t* b
 
 }
 
-double coord_2d_area_triangle(const coord_2d_t* a, const coord_2d_t* b, const coord_2d_t* c){
-    double area = a->x * (b->y - c->y);
-    area += b->x * (c->y - a->y);
-    area += c->x * (a->y - b->y);
-    area = area / 2;
-    if (area < 0){
-        area = -area;
-    }
-    return area;
+double coord_2d_area_triangle(const coord_2d_t*a,const coord_2d_t*b,const coord_2d_t*c){
+    
 }
